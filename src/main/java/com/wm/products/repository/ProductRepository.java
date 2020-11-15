@@ -1,6 +1,6 @@
-package com.supercon.repository;
+package com.wm.products.repository;
 
-import com.supercon.model.Product;
+import com.wm.products.model.Product;
 
 import java.util.List;
 

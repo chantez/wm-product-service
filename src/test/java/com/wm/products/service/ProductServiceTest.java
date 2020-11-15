@@ -1,6 +1,6 @@
-package com.supercon.service;
+package com.wm.products.service;
 
-import com.supercon.service.impl.ProductServiceImpl;
+import com.wm.products.service.impl.ProductServiceImpl;
 import org.junit.Before;
 import org.junit.Test;
 

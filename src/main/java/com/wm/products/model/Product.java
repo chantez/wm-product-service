@@ -1,4 +1,4 @@
-package com.supercon.model;
+package com.wm.products.model;
 
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;

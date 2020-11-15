@@ -1,7 +1,7 @@
-package com.supercon.repository.impl;
+package com.wm.products.repository.impl;
 
-import com.supercon.model.Product;
-import com.supercon.repository.ProductRepository;
+import com.wm.products.model.Product;
+import com.wm.products.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;

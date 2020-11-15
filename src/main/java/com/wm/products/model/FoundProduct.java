@@ -1,4 +1,4 @@
-package com.supercon.model;
+package com.wm.products.model;
 
 import java.util.ArrayList;
 import java.util.List;

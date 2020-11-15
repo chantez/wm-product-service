@@ -1,7 +1,6 @@
-package com.supercon.service;
+package com.wm.products.service;
 
-import com.supercon.model.FoundProduct;
-import com.supercon.model.Product;
+import com.wm.products.model.FoundProduct;
 
 public interface ProductService {
 

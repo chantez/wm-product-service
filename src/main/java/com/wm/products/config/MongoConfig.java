@@ -1,4 +1,4 @@
-package com.supercon.config;
+package com.wm.products.config;
 
 
 import com.mongodb.*;

@@ -1,11 +1,10 @@
-package com.supercon.service.impl;
+package com.wm.products.service.impl;
 
-import com.supercon.model.FoundProduct;
-import com.supercon.model.Product;
-import com.supercon.repository.ProductRepository;
-import com.supercon.service.ProductService;
+import com.wm.products.model.FoundProduct;
+import com.wm.products.model.Product;
+import com.wm.products.repository.ProductRepository;
+import com.wm.products.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.stereotype.Service;
 
 import java.util.*;

@@ -1,4 +1,4 @@
-package com.supercon;
+package com.wm.products;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

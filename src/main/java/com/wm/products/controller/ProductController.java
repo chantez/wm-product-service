@@ -1,8 +1,7 @@
-package com.supercon.controller;
+package com.wm.products.controller;
 
-import com.supercon.model.FoundProduct;
-import com.supercon.model.Product;
-import com.supercon.service.ProductService;
+import com.wm.products.model.FoundProduct;
+import com.wm.products.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
