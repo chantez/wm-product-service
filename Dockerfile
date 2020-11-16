@@ -1,5 +1,5 @@
 
-FROM openjdk:11
+FROM openjdk:8
 
 RUN ls
 
