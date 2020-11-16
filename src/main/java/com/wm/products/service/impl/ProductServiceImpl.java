@@ -27,7 +27,7 @@ public class ProductServiceImpl implements ProductService {
     private boolean isPalindromo(String name){
         boolean isPalindromo = false;
 
-        if(name != null && name.length() >= 3){
+        if(name != null && name.length() >= 0){
 
             boolean passing = true;
             int init = 0;

@@ -51,6 +51,7 @@ public class ProductServiceTest {
         assertTrue(productService.searchProduct("adjda").isPalindromo());
         assertTrue(productService.searchProduct("cadac").isPalindromo());
         assertTrue(productService.searchProduct("bellolleb").isPalindromo());
+        assertTrue(productService.searchProduct("a").isPalindromo());
     }
 
     @Test
@@ -77,8 +78,6 @@ public class ProductServiceTest {
         assertFalse(productService.searchProduct("asdda").isPalindromo());
         assertFalse(productService.searchProduct("caldac").isPalindromo());
         assertFalse(productService.searchProduct("belslolleb").isPalindromo());
-        assertFalse(productService.searchProduct("").isPalindromo());
-        assertFalse(productService.searchProduct("a").isPalindromo());
         assertFalse(productService.searchProduct("ab").isPalindromo());
         assertFalse(productService.searchProduct("aaabaa").isPalindromo());
     }

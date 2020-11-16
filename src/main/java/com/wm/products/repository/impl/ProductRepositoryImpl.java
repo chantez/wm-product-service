@@ -13,30 +13,32 @@ import java.util.List;
 
 @Repository
 public class ProductRepositoryImpl implements ProductRepository {
-
-
+    
     @Autowired
     private MongoTemplate mongoTemplate;
 
     public List<Product>  searchProduct(final String name) {
         List<Criteria> criterias = new ArrayList<>();
+        List<Product> products = new ArrayList<>();
 
-        Criteria criteriaBrand = Criteria.where("brand").regex(name);
-        Criteria criteriaDescription = Criteria.where("description").regex(name);
-        criterias.add(criteriaBrand);
-        criterias.add(criteriaDescription);
-
+        if(name != null && name.length() > 2) {
+            Criteria criteriaBrand = Criteria.where("brand").regex(name);
+            Criteria criteriaDescription = Criteria.where("description").regex(name);
+            criterias.add(criteriaBrand);
+            criterias.add(criteriaDescription);
+        }
         if(isLong(name)){
             long id = Long.parseLong(name);
             Criteria criteriaId = Criteria.where("id").is(id);
             criterias.add(criteriaId);
         }
 
-        Criteria[] criteriaArrays = criterias.stream().toArray(Criteria[]::new);
+        if(criterias.size() > 0) {
+            Criteria[] criteriaArrays = criterias.stream().toArray(Criteria[]::new);
 
-        List<Product> products = mongoTemplate.find(
-                Query.query(new Criteria().orOperator(criteriaArrays)), Product.class);
-
+            products = mongoTemplate.find(
+                    Query.query(new Criteria().orOperator(criteriaArrays)), Product.class);
+        }
         return products;
     }
 
