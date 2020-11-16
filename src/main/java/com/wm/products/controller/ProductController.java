@@ -21,4 +21,7 @@ public class ProductController {
         return new ResponseEntity<>(foundProduct, HttpStatus.OK);
     }
 
+    public void setProductService(ProductService productService) {
+        this.productService = productService;
+    }
 }

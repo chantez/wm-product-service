@@ -18,23 +18,6 @@ public class Product {
     private  String description;
     private  String image;
 
-    public Product(){
-
-    }
-    public Product(Long id, Double price, String brand, String description, String image){
-        this.price = price;
-        this.id = id;
-        this.brand = brand;
-        this.description = description ;
-        this.image = image;
-    }
-
-    public Product(Double price, String productCode, String name) {
-        this.price = price;
-        this.productCode = productCode;
-        this.name = name;
-    }
-
     public void setPrice(Double price) {
         this.price = price;
     }

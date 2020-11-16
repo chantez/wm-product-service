@@ -8,18 +8,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 @Service
 public class ProductServiceImpl implements ProductService {
 
     @Autowired
     private ProductRepository productRepository;
-
-    // Simple source of products: would come from a database in the real world.
-    private static final List<Product> ALL_PRODUCTS = new ArrayList<>();
-
-    private List<Product> products;
 
     public FoundProduct searchProduct(final String name) {
 
@@ -30,9 +24,7 @@ public class ProductServiceImpl implements ProductService {
         return foundProduct;
     }
 
-
-
-    public boolean isPalindromo(String name){
+    private boolean isPalindromo(String name){
         boolean isPalindromo = false;
 
         if(name != null && name.length() >= 3){
@@ -57,6 +49,10 @@ public class ProductServiceImpl implements ProductService {
 
 
         return isPalindromo;
+    }
+
+    public void setProductRepository(ProductRepository productRepository) {
+        this.productRepository = productRepository;
     }
 }
 

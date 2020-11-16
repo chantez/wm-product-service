@@ -6,8 +6,6 @@ RUN ls
 COPY .  .
 COPY gradle/wrapper/gradle-wrapper.properties  .
 
-
-
 RUN ls
 
 RUN ./gradlew clean build
